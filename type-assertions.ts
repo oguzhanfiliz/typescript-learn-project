@@ -1,3 +1,4 @@
 let message;
 message= 'Hello World';
 let count = (<string>message).length;
+let leng = (message as string).length;

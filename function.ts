@@ -6,7 +6,7 @@ function getAvarage(...a: number[]):string{
         total += a[i];
         count++;
     }
-    const result = total/3;
+    const result = total/count;
     return 'result : ' + result;
 
 }
