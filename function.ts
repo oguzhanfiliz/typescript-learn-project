@@ -1,9 +1,9 @@
-function getAvarage(a:number,b:number,c?:number):string{
-    let total = a+b;
-    let count = 2;
+function getAvarage(...a: number[]):string{
+    let total = 0;
+    let count = 0;
 
-    if(typeof c !== 'undefined'){
-        total += c;
+    for(let i=0; i<a.length; i++){
+        total += a[i];
         count++;
     }
     const result = total/3;
